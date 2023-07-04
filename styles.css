@@ -1,33 +1,116 @@
 body {
-
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
-.container-Main {
-
-    display: flex;
-    justify-content: space-evenly;
+.container-Main { 
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
 }
 
 .card {
+   
+    
+  width: 300px;
+  height: 175px;
+  border: 2px solid black;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 10px 10px lightblue;
 
-    width: 300px;
-    height: 175px;
-    border: 2px solid black;
-    border-radius: 10px;
 }
 
-.wheel {
+.card:hover {
+    background-color: beige;
+}
 
-    width: 50px;
-    margin: 15px;
+.wheel, .people, .rainbow {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 100%;
 }
 
 .iconAndText {
+  display: flex;
+}
 
-     display: flex;
+.big-Space {
+  line-height: 1.4;
+}
 
+.container-Second {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav {
+  color: dimgray;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
 }
 
 
+
+
+
+/* Start of Responsive for Mobile and Big screen */
+
+
+@media (max-width: 375px) {
+
+    .container-Main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+        gap: 2rem;
+    }
+
+
+    .card {
+
+        width: 175px;
+        height: 300px;
+    }
+
+    .card:hover {
+        background-color: beige;
+    }
+
+    .iconAndText {
+        display: flex;
+        flex-direction: column;
+      }
+      .big-Space {
+        line-height: 1.4;
+        padding-left: 20px;
+        padding-right: 0px;
+        /* text-align: center; */
+      }
+
+   
+
+
+
+
+
+    
+   
+
+ 
+
+}
