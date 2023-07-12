@@ -3,7 +3,7 @@ body {
   height: auto;
 }
 
-.container-Main { 
+.container-Main {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -13,22 +13,21 @@ body {
 }
 
 .card {
-   
-    
   width: 300px;
   height: 175px;
   border: 2px solid black;
-  background-color:white;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px lightblue;
-
 }
 
 .card:hover {
-    background-color: beige;
+  background-color: beige;
 }
 
-.wheel, .people, .rainbow {
+.wheel,
+.people,
+.rainbow {
   width: 50px;
   height: 50px;
   margin: 15px;
@@ -63,54 +62,120 @@ body {
   height: 25px;
 }
 
+.footer-Card {
+  margin-top: 100px;
+}
 
+.box {
+  margin: auto;
+  color: darkblue;
+  width: 700px;
+  border-radius: 10px;
+  height: 100px;
+  background-color: rgb(115, 143, 235);
+}
 
+.card-content {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+ul {
+  list-style: none;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  rotate: 30deg;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  rotate: 40deg;
+  margin-top: 20px;
+}
+
+.text p {
+  text-align: center;
+}
+
+.footer-bar {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 150px;
+}
+
+h2 {
+  color: white;
+}
 
 /* Start of Responsive for Mobile and Big screen */
 
-
 @media (max-width: 375px) {
+  .container-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    gap: 2rem;
+  }
 
-    .container-Main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 15px;
-        gap: 2rem;
-    }
+  .card {
+    width: 175px;
+    height: 300px;
+  }
 
+  .card:hover {
+    background-color: beige;
+  }
 
-    .card {
-
-        width: 175px;
-        height: 300px;
-    }
-
-    .card:hover {
-        background-color: beige;
-    }
-
-    .iconAndText {
-        display: flex;
-        flex-direction: column;
-      }
-      .big-Space {
-        line-height: 1.4;
-        padding-left: 20px;
-        padding-right: 0px;
-        /* text-align: center; */
-      }
-
-   
+  .iconAndText {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-Space {
+    line-height: 1.4;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
 
 
+  .box {
+    margin: auto;
+    color: darkblue;
+    width: 360px;
+    border-radius: 10px;
+    height: 100px;
+    background-color: rgb(115, 143, 235);
+  }
 
+  h2 {
+    text-align: center;
+    font-size: 12px;
+  }
 
+  .footer-bar {
+    margin-left: 50px;
+    margin-right: 5px;
+  }
 
-    
-   
+  .icon {
+    width: 55px;
+    height: 55px;
+    rotate: 40deg;
+    margin-top: 35px;
+  }
 
- 
-
+  .icons {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    rotate: 30deg;
+  }
 }
